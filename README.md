@@ -16,7 +16,7 @@
 - run `php artisan migrate`.
 - cd to the project_folder/next and run `npm install` (accessible through: `http://localhost:3000/`).
 
-**You're ready. 🎉**
+**You're ready to try.**
 
 
 ## Overview
@@ -39,4 +39,8 @@
 - Tasks can be added from `/components/AddNewTask.tsx` form, after clicking on the (+) button, a Laravel POST API `/api/add-new-task` is then sent with formData, in order to insert into RethinkDB.
 
 # Demo
-... Uploading
+
+https://github.com/user-attachments/assets/aceb8fef-a400-4a9e-9ce9-a3dabee62b97
+
+
+
