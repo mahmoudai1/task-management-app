@@ -65,7 +65,7 @@ const getStatusEllipseClasses = (status: string) => {
 };
 
 const truncateText = (input: string) => {
-    return input?.length > 100 ? `${input.substring(0, 100)}...` : input;
+    return input?.length > 75 ? `${input.substring(0, 75)}...` : input;
 };
 
 
@@ -112,7 +112,7 @@ const TasksList:  FC<TasksProps> = ({ tasks, loading }) => {
                         <div className="text-xl font-bold tracking-tight text-gray-700">{task.title}</div>
                     </div>
                     <div className={`text-xs capitalize mt-0.5 font-bold text-gray-500`}>{task.status}</div>
-                    <div className='mt-2 text-xs text-gray-600'>{truncateText("Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eius?")}</div>
+                    <div className='mt-2 text-xs text-gray-600'>{truncateText(task.description)}</div>
                     <div className='mt-2 text-xs text-gray-400 text-end'>{formatDistanceToNow(task.created_at ?? null, { addSuffix: true })}</div>
                 </div>
 

@@ -58,7 +58,7 @@ const ViewTask: FC<ViewTaskProps> = ({ isOpen, onClose, task }) => {
 
                 <div className="mt-2">
                   <p className="text-sm text-gray-500">
-                    {task.description} lorem100
+                    {task.description}
                   </p>
                 </div>
 
