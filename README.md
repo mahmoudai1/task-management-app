@@ -2,6 +2,7 @@
 - [How to run](#how-to-run)
 - [Overview](#overview)
 - [Design](#design)
+- [Project Structure](#project-structure)
 - [Demo Video](#demo)
 
 ## How to run
@@ -22,12 +23,20 @@
 - Laravel APIs, NextJs (Typescript) Front-end, and RethinkDB are used.
 - Fixed issues inside the core of Laravel 11 files and RethinkDB Package, in order to different compatibility versions between Laravel 11 and RethinkDB.
 - Users can add New Task `/api/add-new-task` to RethinkDB.
-- Users can display their tasks `/api/tasks/{status}` from RethinkDB after either seeding to the database dummy tasks `php artisan db:seed --class=TaskSeeder` or Add New One from the Front End.
+- Users can display their tasks `/api/tasks/{status}` from RethinkDB after either seeding to the database dummy tasks using command `php artisan db:seed --class=TaskSeeder` or Add New One from the Front End.
+- A hardcoded data also exists but not used.
 
 ## Design
 - Simple, modern, and light design.
 - Followed UI/UX best practices with different media queries.
 - TailwindCSS is used for styling.
+
+## Project Structure
+- App started at Page.tsx and it includes /components/TasksList.tsx.
+- At first, TasksList.tsx fetches all the tasks by calling a Laravel GET API `/api/tasks/{status}`, and pass `status` with 'all'.
+- If a task clicked, it will open up a /components/ViewTask.tsx Modal, in order to get the full description for this task.
+- If the selectedTab for status is changed, a Laravel GET API `/api/tasks/{status}` is called with the selectedTab (status) name, then it return only the tasks for this status.
+- Tasks can be added from AddNewTask.tsx form, after clicking on the (+) button, a Laravel POST API `/api/add-new-task` is then sent with formData, in order to insert into RethinkDB.
 
 # Demo
 ... Uploading
