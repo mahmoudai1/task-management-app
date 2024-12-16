@@ -21,7 +21,7 @@
 
 
 ## Overview
-- Laravel APIs, NextJs (Typescript) Front-end, and RethinkDB are used.
+- Laravel APIs Back-end, NextJs (Typescript) Front-end, and RethinkDB are used.
 - Fixed issues inside the core of Laravel 11 files and RethinkDB Package, in order to different compatibility versions between Laravel 11 and RethinkDB.
 - Users can add New Task `/api/add-new-task` to RethinkDB.
 - Users can display their tasks `/api/tasks/{status}` from RethinkDB after either seeding to the database dummy tasks using command `php artisan db:seed --class=TaskSeeder` or Add New One from the Front End.
