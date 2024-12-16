@@ -12,7 +12,7 @@ class TaskController extends Controller
     public function index($status = 'all'): JsonResponse
     {
         if($status == 'all'){
-            return response()->json(Task::all());
+            return response()->json(Task::orderBy('status', 'desc')->get());
         }
 
         return response()->json(Task::where('status', $status)->get());
