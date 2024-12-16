@@ -14,7 +14,8 @@
 - cd to the project_folder and run `composer install`.
 - run `php artisan serve` (accessible through: `http://localhost:8000/`).
 - run `php artisan migrate`.
-- cd to the project_folder/next and run `npm install` (accessible through: `http://localhost:3000/`).
+- cd to the project_folder/next and run `npm install`.
+- Then run `npm run dev` (accessible through: `http://localhost:3000/`).
 
 **You're ready to try.**
 
