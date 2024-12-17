@@ -1,0 +1,36 @@
+{
+    "name": "duxet/laravel-rethinkdb",
+    "description": "RethinkDB adapter for Laravel",
+    "authors": [
+        {
+            "name": "duxet"
+        }
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": { "duxet\\Rethinkdb\\": "src/" }
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/container": ">=5.0.0",
+        "illuminate/contracts": ">=5.0.0",
+        "illuminate/database": ">=5.0.0",
+        "illuminate/support": ">=5.0.0",
+        "danielmewes/php-rql": "~2.3.0"
+    },
+    "require-dev": {
+        "psr/log": "1.0.0",
+        "orchestra/testbench": "3.7.*",
+        "codeclimate/php-test-reporter": "0.1.*@dev",
+        "mockery/mockery": "0.9.*@dev",
+        "phpunit/phpunit": "~4.0"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "duxet\\Rethinkdb\\RethinkdbServiceProvider"
+            ]
+        }
+    }
+}
