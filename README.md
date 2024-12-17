@@ -18,7 +18,7 @@
 - cd to the project_folder/next and run `npm install`.
 - Then run `npm run dev` (accessible through: `http://localhost:3000/`).
 
-**You're ready to try.**
+**Now you're ready to try.**
 
 
 ## Overview
