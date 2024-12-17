@@ -12,6 +12,7 @@
 
 - Run RethinkDB via the command `rethinkdb` (accessible through: `http://localhost:8080/`).
 - cd to the project_folder and run `composer install`.
+- Copy the folders from `/vendor_fix` and replace it into your new generated `vendor` folder to fix the compatibility versions issues between Laravel 11 and RethinkDB.
 - run `php artisan migrate`.
 - run `php artisan serve` (accessible through: `http://localhost:8000/`).
 - cd to the project_folder/next and run `npm install`.
