@@ -11,6 +11,7 @@
 - Install [RethinkDB](https://rethinkdb.com/docs/install/).
 
 - Run RethinkDB via the command `rethinkdb` (accessible through: `http://localhost:8080/`).
+- Open `http://localhost:8080/#dataexplorer` and run this command to create the database `r.dbCreate('task_management');`.
 - cd to the project_folder and run `composer install`.
 - Copy the folders from `/vendor_fix` and replace it into your new generated `vendor` folder to fix the compatibility versions issues between Laravel 11 and RethinkDB.
 - run `php artisan migrate`.
